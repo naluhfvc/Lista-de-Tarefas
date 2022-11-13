@@ -38,6 +38,7 @@ function salvar(){
 }
 
 function getTarefasSalvas (){
+    if(!localStorage.getItem('tarefas')) return;
     const tarefas =  localStorage.getItem('tarefas');
     const listaTarefas = JSON.parse(tarefas);
 
